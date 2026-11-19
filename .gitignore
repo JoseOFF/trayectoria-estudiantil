@@ -1,0 +1,131 @@
+# ============================================
+# GITIGNORE PARA PROYECTO NODE.JS
+# Sistema de Expedientes Estudiantiles
+# ============================================
+
+# ============================================
+# DEPENDENCIAS
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# package-lock.json SÍ se sube: fija las versiones exactas de las dependencias
+
+# ============================================
+# VARIABLES DE ENTORNO (¡MUY IMPORTANTE!)
+# ============================================
+.env
+.env.*
+# Excepción: la plantilla sin valores reales sí se sube
+!.env.example
+
+# ============================================
+# ARCHIVOS DE SISTEMA OPERATIVO
+# ============================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================
+# EDITORES E IDEs
+# ============================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============================================
+# LOGS
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ============================================
+# ARCHIVOS TEMPORALES
+# ============================================
+*.tmp
+*.temp
+*.bak
+*.old
+
+# ============================================
+# ARCHIVOS SUBIDOS POR USUARIOS
+# ============================================
+Backend/uploads/*
+!Backend/uploads/.gitkeep
+
+# ============================================
+# COBERTURA DE TESTS
+# ============================================
+coverage/
+.nyc_output/
+
+# ============================================
+# BUILD Y DIST
+# ============================================
+dist/
+build/
+.cache/
+
+# ============================================
+# OTROS
+# ============================================
+.npm
+.eslintcache
+.node_repl_history
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================
+# HERRAMIENTAS LOCALES
+# ============================================
+# Grafo generado por Graphify (se regenera con `graphify update .`)
+graphify-out/
+
+# Configuración local de Claude Code e instrucciones para Claude
+.claude/
+/CLAUDE.md
+
+# ============================================
+# ARCHIVOS SOLO DE USO INTERNO / PRODUCCIÓN
+# ============================================
+# Scripts de respaldo del servidor de producción (tienen credenciales)
+/respaldo_archivos/
+# Documentación interna (se explicará en el README)
+/docs/
+
+# ============================================
+# NOTAS
+# ============================================
+# Este archivo previene que archivos sensibles
+# se suban al repositorio de git
+# 
+# ¡NUNCA SUBAS EL ARCHIVO .env!
+# Contiene contraseñas y claves secretas

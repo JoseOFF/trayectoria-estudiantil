@@ -1,0 +1,118 @@
+
+/* Tarjetas de invitados */
+.invitado-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.invitado-card:hover {
+    border-left-color: var(--bs-primary);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+/* Avatar */
+.invitado-card .avatar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Badges personalizados */
+.invitado-card .badge {
+    font-weight: 500;
+    padding: 0.4em 0.8em;
+}
+
+/* Modal */
+#modalInvitado .modal-header {
+    background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary-dark, #0056b3) 100%);
+}
+
+/* Checkboxes de licenciaturas */
+.licenciatura-check:checked + label,
+.seccion-check:checked + label {
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+/* Secciones del formulario */
+.border-bottom {
+    border-color: rgba(0,0,0,0.1) !important;
+}
+
+/* Botones en hover */
+.btn-outline-primary:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+.btn-outline-danger:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
+/* Búsqueda */
+#searchInvitado:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Estados */
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .invitado-card .row > div {
+        margin-bottom: 1rem;
+    }
+    
+    .invitado-card .text-end {
+        text-align: left !important;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.invitado-card {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Loading state */
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+    border-width: 0.15em;
+}
+
+/* Empty state */
+.card-body.py-5 {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Mejoras de accesibilidad */
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn:focus {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}

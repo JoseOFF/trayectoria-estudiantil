@@ -1,0 +1,218 @@
+/* ============================================
+   FOOTER STYLES - Sistema de Expedientes Estudiantiles
+   ============================================ */
+
+/* Footer principal */
+.app-footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos del footer */
+.footer-title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.footer-subtitle {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Enlaces del footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #3498db;
+    transform: translateX(5px);
+}
+
+.footer-links a i {
+    transition: transform 0.3s ease;
+}
+
+.footer-links a:hover i {
+    transform: scale(1.2);
+}
+
+/* Card de soporte */
+.footer-support-card {
+    background: rgba(52, 152, 219, 0.1);
+    border: 1px solid rgba(52, 152, 219, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.footer-support-card:hover {
+    background: rgba(52, 152, 219, 0.15);
+    border-color: rgba(52, 152, 219, 0.5);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.2);
+}
+
+/* Información de contacto */
+.footer-contact-info a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-info a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.footer-contact-info i {
+    color: #3498db;
+}
+
+/* Línea divisora */
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+}
+
+/* Copyright y versión */
+.footer-copyright {
+    color: #bdc3c7;
+    font-size: 0.875rem;
+}
+
+.footer-version .badge {
+    font-weight: 500;
+    padding: 0.35rem 0.65rem;
+}
+
+/* Footer simplificado */
+.app-footer-simple {
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    margin-top: auto;
+}
+
+.app-footer-simple .text-muted {
+    font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .app-footer {
+        text-align: center;
+    }
+    
+    .footer-title,
+    .footer-subtitle {
+        display: block;
+        text-align: center;
+    }
+    
+    .footer-links {
+        text-align: center;
+    }
+    
+    .footer-links a {
+        display: inline-block;
+    }
+    
+    .footer-support-card {
+        margin-top: 1rem;
+    }
+    
+    .footer-copyright,
+    .footer-version {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-title {
+        font-size: 1rem;
+    }
+    
+    .footer-subtitle {
+        font-size: 0.875rem;
+    }
+    
+    .footer-links a,
+    .footer-contact-info {
+        font-size: 0.8rem;
+    }
+    
+    .footer-support-card {
+        padding: 1rem;
+    }
+    
+    .app-footer .py-4 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.app-footer {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Botón de reportar error */
+.app-footer .btn-primary,
+.app-footer-simple .btn-outline-primary {
+    transition: all 0.3s ease;
+}
+
+.app-footer .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.4);
+}
+
+.app-footer-simple .btn-outline-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(13, 110, 253, 0.3);
+}
+
+/* Asegurar que el footer esté al final */
+.dashboard-container,
+.main-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-area {
+    flex: 1;
+}

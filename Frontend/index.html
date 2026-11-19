@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de Gestión de Expedientes Estudiantiles">
+    <title>Trayectoria Estudiantil</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Chart.js para gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- SweetAlert2 para alertas bonitas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="assets/css/main.css?v=1.0.1">
+    <link rel="stylesheet" href="assets/css/dashboard.css?v=1.0.1">
+    <link rel="stylesheet" href="assets/css/reportes.css?v=1.0.1">
+    <link rel ="stylesheet" href="assets/css/invitados.css?v=1.0.1">
+    <link rel="stylesheet" href="assets/css/footer.css?v=1.0.1">
+
+</head>
+<body>
+    <!-- Contenedor principal de la SPA -->
+    <!-- Todo el contenido se carga dinámicamente aquí -->
+    <div id="app"></div>
+    
+    <!-- Loading spinner (se muestra mientras carga contenido) -->
+    <div id="loading" class="d-none">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Cargando...</span>
+        </div>
+    </div>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Core de la aplicación -->
+    <script src="assets/js/core/api.js"></script>
+    <script src="assets/js/core/config.js?v=1.0.0"></script>
+    <script src="assets/js/core/auth.js"></script>
+    <script src="assets/js/core/state.js"></script>
+    <script src="assets/js/core/router.js"></script>
+    <script src="assets/js/core/acciones.js?v=1.0.0"></script>
+
+    <!-- Utilidades -->
+    <script src="assets/js/utils/Utils.js?v=1.0.2"></script>
+    <script src="assets/js/utils/invitado-utils.js?v=1.0.1"></script>
+    <script src="assets/js/utils/validators.js?v=1.0.1"></script>
+    <script src="assets/js/utils/estadosMunicipios.js?v=1.0.1"></script>
+    <script src="assets/js/utils/EstadoMunicipioSelector.js?v=1.0.1"></script>
+    
+    <!-- Componentes -->
+    <script src="assets/js/components/Navbar.js?v=1.0.2"></script>
+    <script src="assets/js/components/Sidebar.js?v=1.0.5"></script>
+    <script src="assets/js/components/Alert.js?v=1.0.2"></script>
+    <script src="assets/js/components/PasswordManager.js?v=1.0.2"></script>
+    <script src="assets/js/components/Pagination.js?v=1.0.1"></script>
+    <script src="assets/js/components/Footer.js?v=1.0.4"></script>
+    
+    <!-- Vistas -->
+    <script src="assets/js/views/LoginView.js?v=1.0.2"></script>
+    <script src="assets/js/views/DashboardView.js?v=1.0.2"></script>
+    <script src="assets/js/views/UsuariosView.js?v=1.0.3" ></script>
+    <script src="assets/js/views/AlumnoView.js?v=1.0.4" > </script>
+    <script src="assets/js/views/ExpedienteView.js?v=1.0.2" ></script>
+    <script src="assets/js/views/DocumentosView.js?v=1.0.3"></script>
+    <script src="assets/js/views/ReportesView.js?v=1.0.3"></script>
+    <script src="assets/js/views/DocentesView.js?v=1.0.2"></script>
+    <script src="assets/js/views/SeguridadView.js?v=1.0.3"></script>
+    <script src="assets/js/views/PortalAlumnoView.js?v=1.1.2"></script>
+    <script src="assets/js/views/Invitadosview.js?v=1.0.2"></script>
+    <script src="assets/js/views/CargaMasivaView.js?v=1.0.3"></script>
+    <script src="assets/js/views/CompletitudView.js?v=1.2.4"></script>
+
+
+
+
+    <!-- Inicializar aplicación -->
+    <script src="assets/js/main.js?v=1.0.2"></script>
+</body>
+</html>
