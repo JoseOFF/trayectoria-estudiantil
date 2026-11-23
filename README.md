@@ -1,5 +1,7 @@
 # Trayectoria Estudiantil: Sistema de Expedientes Estudiantiles
 
+[![CI](https://github.com/JoseOFF/trayectoria-estudiantil/actions/workflows/ci.yml/badge.svg)](https://github.com/JoseOFF/trayectoria-estudiantil/actions/workflows/ci.yml)
+
 Gestor web de expedientes para una escuela. Concentra en un solo lugar la información personal, académica, de salud, familiar y socioeconómica de cada alumno, junto con sus documentos, calificaciones, becas, movilidad, prácticas profesionales e incidentes. El acceso a cada expediente depende del rol de quien entra.
 
 Los datos de la institución (nombre, ubicación, correo, teléfono y horario) se configuran en un archivo `.env`, así que el sistema se puede adaptar a cualquier escuela sin tocar el código.
